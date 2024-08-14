@@ -2,3 +2,22 @@ body {
     font-family: 'Open Sans';
     font-weight: 400;
 }
+
+.logo-image {
+    width: 50px;
+}
+
+.nitro-text{
+    font-size: 33px;
+    font-family: 'Open Sans';
+    font-weight: light 400;
+}
+
+.bg_pink{
+    background-color: #FFF0ED;
+}
+
+.bg_gray{
+    background-color: #F7F7F7;
+}
+

@@ -1,0 +1,44 @@
+.button{
+    background-color: #5BACC3;
+    color: white;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: regular 400;
+}
+
+.product-heading{
+    font-size: 60px;
+    font-family: 'Open Sans';
+    font-weight: light 300;
+}
+.product-images{
+    height: 280px;
+}
+
+.menu-heading, .footer-heading{
+    font-size: 33px;
+    font-family: 'Open Sans';
+    font-weight: light 300;
+}
+
+.highlight{
+    color: #5BACC3;
+}
+
+.discount-banner{
+    font-size: 45px;
+    font-family: 'Open Sans';
+    font-weight: regular 400;   
+    width: 90%;
+    color: white;
+    background-color: #393939;
+    text-align: center;
+    margin: 0;
+}
+
+.text-bold{
+    font-weight: bold;
+    
+}
