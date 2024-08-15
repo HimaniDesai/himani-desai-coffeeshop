@@ -21,3 +21,24 @@ body {
     background-color: #F7F7F7;
 }
 
+.nav-inline{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-link_font{
+    font-size: 33px;
+    font-family: 'Open Sans';
+    font-weight: light 300;
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.nav-color{
+    color: black;
+}
+
+.nav-color_highlight{
+    color: #5BACC3;
+}

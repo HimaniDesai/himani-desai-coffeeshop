@@ -6,6 +6,8 @@
     display: inline-block;
     font-size: 21px;
     font-weight: regular 400;
+    width: 180px;
+    padding: 20px;
 }
 
 .product-heading{
