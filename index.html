@@ -10,20 +10,16 @@
 </head>
 <body>
     
-    <header>
-        <div class="nav-inline bg_pink ">
-            <a href="\index.html"> <img class="logo-image" src="\assets\images\coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
-            <p class="nitro-text">nitro</p>
-            <p><a class="nav-link_font nav-color" href="\index.html">ABOUT</a></p>
-            <p><a class="nav-link_font nav-color" href="\pages\menu.html">MENU</a></p>
-            <p><a class="nav-link_font text-highlight nav-color_highlight" href="\pages\menu.html">SHOP NOW</a></p>
-            
-        </div>
-        
+    <header class="nav-inline bg_pink " >
+        <a href="\index.html"> <img class="logo-image" src="\assets\images\coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+        <p class="nitro-text">nitro</p>
+        <p><a class="nav-link_font nav-color" href="\index.html">ABOUT</a></p>
+        <p><a class="nav-link_font nav-color" href="\pages\menu.html">MENU</a></p>
+        <p><a class="nav-link_font nav-color_highlight" href="\pages\menu.html">SHOP NOW</a></p>
     </header>
     <main>
         <div class="bg_pink">
-            <h1>Nitro Coffee</h1>
+            <p class="nitro-heading">Nitro Coffee</p>
             <p>
                 Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffee species.                
             </p>
@@ -33,20 +29,22 @@
         </div>
         <div>
             <p class="product-heading">Our Products</p>
-            <div>
-                <img class="product-images" src="\assets\images\coffeebeans.png" alt="coffee beans">
-                <p class="menu-heading">Coffee Beans</p>
-                <p class="menu-heading highlight">$18.99</p>
-            </div>
-            <div>
-                <img class="product-images" src="\assets\images\coldbrew.png" alt="cold brew">
-                <p class="menu-heading">Cold Brew</p>
-                <p class="menu-heading highlight">$4.99</p>
-            </div>
-            <div>
-                <img class="product-images" src="assets\images\inhousebrew.png" alt="in-house brew">
-                <p class="menu-heading">In-house Brew</p>
-                <p class="menu-heading highlight">$2.99</p>
+            <div class="product-inline">
+                <div class="product-card">
+                    <img class="product-images" src="\assets\images\coffeebeans.png" alt="coffee beans">
+                    <p class="menu-heading">Coffee Beans</p>
+                    <p class="menu-heading highlight">$18.99</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-images" src="\assets\images\coldbrew.png" alt="cold brew">
+                    <p class="menu-heading">Cold Brew</p>
+                    <p class="menu-heading highlight">$4.99</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-images" src="assets\images\inhousebrew.png" alt="in-house brew">
+                    <p class="menu-heading">In-house Brew</p>
+                    <p class="menu-heading highlight">$2.99</p>
+                </div>
             </div>
             <button class="button" type="button" onclick="location.href='pages\\menu.html'">VIEW ALL</button>
         </div>

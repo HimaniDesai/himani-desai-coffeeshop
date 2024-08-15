@@ -25,6 +25,7 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+    margin: 0%;
 }
 .nav-link_font{
     font-size: 33px;
@@ -42,3 +43,4 @@ body {
 .nav-color_highlight{
     color: #5BACC3;
 }
+
