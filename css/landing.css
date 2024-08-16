@@ -117,9 +117,12 @@
 }
 
 .footer-container{
-    padding: 4em;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 71em;
-    justify-content: space-between;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+.address-footer{
+    margin-left: 3em;
 }
