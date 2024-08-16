@@ -26,15 +26,17 @@
     margin-bottom: 0%;
 }
 .nav{
-    width:100%;
+    /* width:76.5em; */
+    width: 100%;
+    align-self: center;
     background-color: #393939;
     color: white;
     list-style: "I";
     display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 0%;
     margin-bottom: 0px;
+    padding: 0%;
 }
 ul.nav li{
     font-size: 1.5em;
@@ -43,6 +45,9 @@ ul.nav li{
 
 ul.nav{
     margin: 0%;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
 #hot_drinks{
@@ -52,8 +57,9 @@ ul.nav{
     width:100%;
     color: white;
 }
+
 .nav-link__items{
-    text-align: center;
+    
     font-size: 21px;
     font-weight: regular 400;
     text-decoration: none;
@@ -61,7 +67,7 @@ ul.nav{
 }
 
 .menu_container, .nav_container{
-    width: 100%;
+    width: auto;
     text-align: center;
     margin: 0;
 }
@@ -71,7 +77,8 @@ ul.nav{
     font-family: 'Open Sans';
     font-weight: light 300;
     text-align: center;
-    margin-top: 0%;
+    margin: 0%;
+    padding-top: 0.7em;
 }
 .menu-item_heading{
     font-size: 33px;
@@ -79,6 +86,7 @@ ul.nav{
     font-weight: regular 400;
     text-align: center;
     margin-bottom: 0%;
+    margin-top: 25px;
 }
 .menu-inline{
     display: inline-table;
@@ -100,4 +108,5 @@ ul.nav{
     text-align: center;
     margin-bottom: 0%;
     margin-top: 0%;
+    padding-bottom: 2%;
 }
