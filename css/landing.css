@@ -109,6 +109,8 @@
     color: white;
     background-color: #393939;
     text-align: center;
+    margin: 8% auto;
+    padding: 2% 1%;
 }
 
 .text-bold{
@@ -124,5 +126,5 @@
     align-items: center;
 }
 .address-footer{
-    margin-left: 3em;
+    margin: auto;
 }
