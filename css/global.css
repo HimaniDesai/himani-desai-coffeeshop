@@ -9,9 +9,10 @@ body {
 }
 
 .nitro-text{
-    font-size: 33px;
+    font-size: 60px;
     font-family: 'Open Sans';
     font-weight: light 400;
+    margin: 0 auto 0 0;
 }
 
 .bg_pink{
@@ -25,8 +26,9 @@ body {
 .nav-inline{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
-    margin: 0%;
+    padding-inline-start: 1em;
 }
 .nav-link_font{
     font-size: 33px;
@@ -34,9 +36,10 @@ body {
     font-weight: light 300;
     text-align: center;
     text-decoration: none;
-    padding: 2rem;
+    padding: 2rem ;
+    display: flex;
+    justify-content: flex-end;
 }
-
 .nav-color{
     color: black;
 }
@@ -44,4 +47,3 @@ body {
 .nav-color_highlight{
     color: #5BACC3;
 }
-
