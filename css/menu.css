@@ -18,7 +18,7 @@
 }
 
 .header-image{
-    background-image: url("\\assets\\images\\coffee-circle.jpg");
+    background-image: url("/assets/images/coffee-circle.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -30,7 +30,6 @@
     
 }
 .nav{
-    /* width:76.5em; */
     width: 100%;
     align-self: center;
     background-color: #393939;
@@ -39,7 +38,7 @@
     display: flex;
     justify-content: center;
     margin-top: 0%;
-    margin-bottom: 0px;
+    margin-bottom: 0%;
     padding: 0%;
 }
 ul.nav li{
@@ -58,8 +57,9 @@ ul.nav{
     margin-top: 0%;
 }
 .nav-link{
-    width:100%;
     color: white;
+    justify-content: left;
+    padding: 0 1em;
 }
 
 .nav-link__items{
@@ -115,5 +115,4 @@ ul.nav{
     text-align: center;
     margin-bottom: 0%;
     margin-top: 0%;
-    /* padding-bottom: 2%; */
 }
