@@ -8,26 +8,48 @@
     font-weight: regular 400;
     width: 180px;
     padding: 20px;
-    
 }
+
 .button-text{
     text-decoration: none;
     color: white;
 }
-.view-all-button{
+.view-all-button_center_align{
     display: flex;
     justify-content: center;
+    z-index: -1;
+}
+.view-all-button{
+    
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    
+}
+.button-border{
+    width: 180px;
+    /* display: flex;
+    justify-self: left; */
+    margin-top: 1.5em;
+    border: 2px solid black ;
 }
 .shop-now-button, .learn-more-button{
+    /* margin-top: 1.5em;
     display: flex;
-    justify-self: left;
-    margin-top: 1.5em;
+    justify-self: left; */
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
 }
 .nitro-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2em 8em 2em 8em;
+    position: relative;
+    z-index: -1;
 }
 
 .nitro-heading{
@@ -80,6 +102,8 @@
 
 .product-container{
     padding: 2em;
+    position: relative;
+    z-index: -1;
 }
 
 .product-card{
@@ -91,6 +115,7 @@
     box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
     text-align: center;
     display: inline-grid;
+    overflow: hidden;
 }
 .product-details{
     display: flex;
@@ -100,9 +125,6 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
 }
 .product-inline{
     display:flex;
@@ -143,26 +165,38 @@
     width: 60%;
 }
 .cold-brew_image{
-    background-image: url("\\assets\\images\\coldbrewbackground.png");
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cold-brew_border{
+    border: 5px solid #5BACC3;
+    position: absolute;
+    z-index: 1;
+}
+.background-image{
+    background-image: url("/assets/images/coldbrewbackground.png");
     background-position: center;
     background-size: cover;
     width: 400px;
     padding: 2em;
     display: flex;
     justify-content: center;
-    align-content: center;
+    position: relative;
+    
 }
-
 .cold-brew-description{
     justify-items: flex-start;
     align-content: center;
 }
 .foreground-image{
     height: 280px;
-    padding: 20px;
+    padding: auto;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    justify-self: center;
 }
 
 .cold-brew-heading{
@@ -207,8 +241,31 @@
 }
 
 .footer-container{
-    display: inline-flex;
     width: 100%;
-    justify-content:space-around;
-    align-items: center;
+    overflow: hidden;
+}
+.footer-inline{
+    display: flex;
+    justify-content:space-between;
+}
+
+.background-icon{
+    opacity: 25%;
+    width: 120px;
+    height: auto;
+}
+
+.left-icon{
+    position: relative;
+    left: -3%;
+    top: -20%;
+    margin-bottom: 5%;
+    margin-top: 1em;
+}
+.right-icon{
+    margin-top: 5%;
+    margin-bottom: 1em;
+    position: relative;
+    right: -3%;
+    overflow: hidden;
 }
