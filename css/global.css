@@ -9,9 +9,9 @@ body {
 }
 
 .nitro-text{
-    font-size: 33px;
+    font-size: 60px;
     font-family: 'Open Sans';
-    font-weight: light 400;
+    font-weight: 300;
     display: flex;
     justify-content: flex-start;
     margin: 0%;

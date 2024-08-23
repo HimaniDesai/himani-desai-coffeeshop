@@ -15,9 +15,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.menu-border{
+    width: 300px;
+    height: 200px;
+    border: 5px solid #5BACC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
 }
 
-.header-image{
+.main-image{
     background-image: url("/assets/images/coffee-circle.jpg");
     background-size: cover;
     background-position: center;
@@ -26,6 +39,7 @@
     display: flex;
     flex-direction:row;
     justify-content: center;
+    align-items: center;
     margin-bottom: 0%;
     
 }
@@ -65,7 +79,7 @@ ul.nav{
 .nav-link__items{
     
     font-size: 21px;
-    font-weight: regular 400;
+    font-weight: light 300;
     text-decoration: none;
     color: white;
 }
