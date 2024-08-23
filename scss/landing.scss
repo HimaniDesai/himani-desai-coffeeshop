@@ -1,3 +1,5 @@
+@use './partials/global' as *;
+
 body main{
     position: relative;
     z-index: -2;

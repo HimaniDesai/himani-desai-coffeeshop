@@ -1,0 +1,206 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0%;
+  position: relative;
+  z-index: -3;
+}
+
+.logo-image {
+  width: 50px;
+}
+
+.nitro-text {
+  font-size: 60px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0%;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-items {
+  display: flex;
+  margin-inline-start: auto;
+  padding: 0em;
+}
+
+.bg_pink {
+  background-color: #FFF0ED;
+}
+
+.bg_gray {
+  background-color: #F7F7F7;
+}
+
+.nav-inline {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+}
+
+.nav-link_font {
+  font-size: 21px;
+  font-family: "Open Sans";
+  font-weight: light 300;
+  text-align: center;
+  text-decoration: none;
+  padding-inline: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-color {
+  color: black;
+}
+
+.nav-color_highlight {
+  color: #5BACC3;
+}
+
+.logo-image {
+  width: 50px;
+}
+
+.title-box {
+  width: 300px;
+  height: 200px;
+  font-size: 60px;
+  font-family: "Open Sans";
+  font-weight: light 300;
+  text-align: center;
+  color: white;
+  border: 5px solid #5BACC3;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+
+.menu-background {
+  background-color: #393939;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.main-image {
+  background-image: url("/assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0%;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  align-self: center;
+  background-color: #393939;
+  color: white;
+  list-style: "I";
+  display: flex;
+  justify-content: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0%;
+  position: relative;
+  z-index: 2;
+}
+
+ul.nav li {
+  font-size: 1.5em;
+  color: aqua;
+}
+
+ul.nav {
+  margin: 0%;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+#hot_drinks {
+  margin-top: 0%;
+}
+
+.nav-link {
+  color: white;
+  justify-content: left;
+  padding: 0 1em;
+}
+
+.nav-link__items {
+  font-size: 21px;
+  font-weight: light 300;
+  text-decoration: none;
+  color: white;
+}
+
+.menu_container, .nav_container {
+  width: auto;
+  text-align: center;
+  margin: 0;
+}
+
+.menu_heading {
+  font-size: 60px;
+  font-family: "Open Sans";
+  font-weight: light 300;
+  text-align: center;
+  margin: 0%;
+}
+
+.menu-item_heading {
+  font-size: 33px;
+  font-family: "Open Sans";
+  font-weight: regular 400;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 25px;
+}
+
+.menu-inline {
+  display: inline-table;
+  justify-content: center;
+  margin: 0;
+}
+
+.menu-details {
+  padding: 1.5em;
+}
+
+.text {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: italic 400;
+  font-style: italic;
+  width: 40%;
+  text-emphasis: true;
+  text-align: center;
+}
+
+.text-highlight {
+  color: #5BACC3;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}/*# sourceMappingURL=menu.css.map */
