@@ -2,6 +2,8 @@ body {
     font-family: 'Open Sans';
     font-weight: 400;
     margin: 0%;
+    position: relative;
+    z-index: -3;
 }
 
 .logo-image {
@@ -35,9 +37,9 @@ body {
 .nav-inline{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     height: 100%;
     padding-inline-start: 1em;
+    padding-inline-end: 1em;
 }
 .nav-link_font{
     font-size: 21px;
