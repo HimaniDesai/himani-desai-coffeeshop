@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: Regular 400;
   margin: 0%;
   position: relative;
   z-index: -3;
@@ -13,7 +13,7 @@ body {
 .nitro-text {
   font-size: 60px;
   font-family: "Open Sans";
-  font-weight: 300;
+  font-weight: Light 300;
   display: flex;
   justify-content: flex-start;
   margin: 0%;
@@ -46,7 +46,7 @@ body {
 .nav-link_font {
   font-size: 21px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: light Light 300;
   text-align: center;
   text-decoration: none;
   padding-inline: 0.5em;
@@ -79,13 +79,17 @@ body main {
   background-color: transparent;
   width: 180px;
   font-size: 20px;
-  font-family: "Open sans";
-  font-weight: regular 400;
+  font-family: "Open Sans";
+  font-weight: Regular 400;
   text-align: center;
   padding: 20px 0;
   position: relative;
   right: 10px;
   bottom: 10px;
+}
+
+.button-fg:active {
+  transform: translate(10px, 10px);
 }
 
 .button-text {
@@ -112,7 +116,7 @@ body main {
 .nitro-heading {
   font-size: 60px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: Light 300;
   margin-top: 2em;
   text-align: left;
   margin-bottom: 0%;
@@ -121,7 +125,7 @@ body main {
 .nitro-text_styling {
   font-size: 18px;
   font-family: "Open Sans";
-  font-weight: regular 400;
+  font-weight: Regular 400;
   width: 52%;
   text-align: left;
   margin-bottom: 1.5em;
@@ -152,7 +156,7 @@ body main {
 .product-heading {
   font-size: 60px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: Light 300;
   text-align: center;
   margin-top: 0%;
 }
@@ -203,13 +207,13 @@ body main {
 .footer-heading {
   font-size: 33px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: Light 300;
 }
 
 .menu-heading {
   font-size: 33px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: Light 300;
   margin: 0;
   text-align: left;
 }
@@ -217,7 +221,7 @@ body main {
 .menu-description {
   font-size: 18px;
   font-family: "Open Sans";
-  font-weight: regular 400;
+  font-weight: Regular 400;
   margin: 0%;
   color: #393939;
   text-align: left;
@@ -240,6 +244,8 @@ body main {
   display: flex;
   justify-content: center;
   align-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .cold-brew_background {
@@ -281,12 +287,26 @@ body main {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+  position: relative;
+  z-index: 0;
 }
 
+img.foreground-image:hover {
+  animation: tilted_can_rotate 2s linear infinite;
+}
+
+@keyframes tilted_can_rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
 .cold-brew-heading {
   font-size: 60px;
   font-family: "Open Sans";
-  font-weight: light 300;
+  font-weight: Light 300;
   text-align: left;
   margin: 0%;
   align-content: center;
@@ -296,7 +316,7 @@ body main {
 .cold-brew-text_styling {
   font-size: 18px;
   font-family: "Open Sans";
-  font-weight: regular 400;
+  font-weight: Regular 400;
   width: 60%;
   text-align: left;
 }
@@ -313,15 +333,25 @@ body main {
 .discount-banner {
   font-size: 45px;
   font-family: "Open Sans";
-  font-weight: regular 400;
+  font-weight: Regular 400;
   width: 90%;
   color: white;
   background-color: #393939;
   text-align: center;
   margin: 8% auto;
   padding: 2% 1%;
+  animation: banner-effect 2.5s infinite;
+  animation-direction: alternate;
 }
 
+@keyframes banner-effect {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5BACC3;
+  }
+}
 .text-bold {
   font-weight: bold;
 }

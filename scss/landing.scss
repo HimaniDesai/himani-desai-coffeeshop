@@ -5,29 +5,33 @@ body main{
     z-index: -2;
 }
 .button-bg{
-    background-color: #5BACC3;
+    background-color: $nitro-blue;
     position: relative;
     
     width: 180px;
     z-index: -1;
   }
   .button-fg{
-    border: 2px solid black;
+    border: 2px solid $black;
     background-color: transparent;
     width: 180px;
-    font-size: 20px;
-    font-family: 'Open sans';
-    font-weight: regular 400;
+    font-size: $font-size5;
+    font-family: $font-family;
+    font-weight: $font-weight-3-4-5;
     text-align: center;
     padding: 20px 0;
     position: relative;
     right: 10px;
     bottom: 10px;
+
+  }
+  .button-fg:active{
+    transform: translate(10px,10px);
   }
 
 .button-text{
     text-decoration: none;
-    color: white;
+    color: $white;
 }
 .view-all-button_center_align{
     display: flex;
@@ -45,17 +49,17 @@ body main{
 }
 
 .nitro-heading{
-    font-size: 60px;
-    font-family: 'Open Sans';
-    font-weight: light 300;
+    font-size: $font-size1;
+    font-family: $font-family;
+    font-weight: $font-weight-1-2;
     margin-top: 2em;
     text-align: left;
     margin-bottom: 0%;
 }
 .nitro-text_styling{
-    font-size: 18px;
-    font-family: 'Open Sans';
-    font-weight: regular 400;
+    font-size: $font-size4;
+    font-family: $font-family;
+    font-weight: $font-weight-3-4-5;
     width: 52%;  
     text-align: left; 
     margin-bottom: 1.5em;
@@ -83,9 +87,9 @@ body main{
 }
 
 .product-heading{
-    font-size: 60px;
-    font-family: 'Open Sans';
-    font-weight: light 300;
+    font-size: $font-size1;
+    font-family: $font-family;
+    font-weight: $font-weight-1-2;
     text-align: center;
     margin-top: 0%;
 }
@@ -129,29 +133,29 @@ body main{
     justify-content: space-evenly;
     margin: 2%;
 }
- .footer-heading{
-    font-size: 33px;
-    font-family: 'Open Sans';
-    font-weight: light 300;
+.footer-heading{
+    font-size: $font-size2;
+    font-family: $font-family;
+    font-weight: $font-weight-1-2;
 }
 .menu-heading{
-    font-size: 33px;
-    font-family: 'Open Sans';
-    font-weight: light 300;
+    font-size: $font-size2;
+    font-family: $font-family;
+    font-weight: $font-weight-1-2;
     margin: 0;
     text-align: left;
 }
 .menu-description{
-    font-size: 18px;
-    font-family: 'Open Sans';
-    font-weight: regular 400;
+    font-size: $font-size4;
+    font-family: $font-family;
+    font-weight: $font-weight-3-4-5;
     margin: 0%;
-    color: #393939;
+    color: $graphite;
     text-align: left;
 }
 
 .highlight{
-    color: #5BACC3;
+    color: $nitro-blue;
 }
 
 .cold-brew-icons{
@@ -166,6 +170,8 @@ body main{
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+    z-index: 1;
 }
 .cold-brew_background{
     background-image: url("/assets/images/coldbrewbackground.png");
@@ -179,7 +185,7 @@ body main{
     z-index: -1;
 }
 .border-image{
-    border: 5px solid #5BACC3;
+    border: 5px solid $nitro-blue;
     background-color: transparent;
     width: 400px;
     height: 330px;
@@ -205,21 +211,38 @@ body main{
     justify-content: space-between;
     align-items: center;
     justify-self: center;
+    position: relative;
+    z-index: 0;
+    
+    
+}
+img.foreground-image:hover{
+    animation: tilted_can_rotate 2s linear infinite;
+}
+
+@keyframes tilted_can_rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(359deg);;
+    }
+    
 }
 
 .cold-brew-heading{
-    font-size: 60px;
-    font-family: 'Open Sans';
-    font-weight: light 300;
+    font-size: $font-size1;
+    font-family: $font-family;
+    font-weight: $font-weight-1-2;
     text-align: left;
     margin: 0%;
     align-content: center;
     width: fit-content;
 }
 .cold-brew-text_styling{
-    font-size: 18px;
-    font-family: 'Open Sans';
-    font-weight: regular 400;
+    font-size: $font-size4;
+    font-family: $font-family;
+    font-weight: $font-weight-3-4-5;
     width: 60%;  
     text-align: left; 
 }
@@ -235,15 +258,23 @@ body main{
 }
 
 .discount-banner{
-    font-size: 45px;
-    font-family: 'Open Sans';
-    font-weight: regular 400;   
+    font-size: $font-discount;
+    font-family: $font-family;
+    font-weight: $font-weight-3-4-5;   
     width: 90%;
-    color: white;
-    background-color: #393939;
+    color: $white;
+    background-color: $graphite;
     text-align: center;
     margin: 8% auto;
     padding: 2% 1%;
+    // -webkit-animation: both banner-effect 2.5s infinite;
+    animation: banner-effect 2.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner-effect {
+    from{background-color: $graphite;}
+    to {background-color: $nitro-blue;}
 }
 
 .text-bold{
